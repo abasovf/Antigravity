@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali's YouTube Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <nav>
+        <div class="logo">Ali<span>Tube</span></div>
+        <div class="lang-switch">
+            <button id="lang-az">AZ</button>
+            <button id="lang-en" class="active">EN</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero glass">
+            <div class="hero-content">
+                <h1 data-i18n="hello">Hi, I'm <span class="highlight">Ali</span></h1>
+                <h2 data-i18n="subtitle">12-year-old Aspiring YouTuber & Creator</h2>
+                <p data-i18n="description">Welcome to my world! I love making videos about gaming, vlogs, and
+                    technology. Check out my latest content and join the journey.</p>
+                <a href="#" class="btn primary" data-i18n="subscribe">Subscribe to my Channel</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <span>🎬</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos">
+            <h2 class="section-title" data-i18n="latest_videos">My Latest Videos</h2>
+            <div class="video-grid">
+                <div class="video-card glass">
+                    <div class="thumbnail">🕹️</div>
+                    <h3 data-i18n="vid1_title">Epic Gaming Moments</h3>
+                    <p data-i18n="vid1_desc">Watch my best plays this week!</p>
+                </div>
+                <div class="video-card glass">
+                    <div class="thumbnail">📱</div>
+                    <h3 data-i18n="vid2_title">Tech Review</h3>
+                    <p data-i18n="vid2_desc">Reviewing my new setup.</p>
+                </div>
+                <div class="video-card glass">
+                    <div class="thumbnail">🚴</div>
+                    <h3 data-i18n="vid3_title">Weekend Vlog</h3>
+                    <p data-i18n="vid3_desc">Come cycle with me!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <p data-i18n="footer">&copy; 2026 Ali. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
