@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Python Backend Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="code-tag">&lt;</span>Dev<span class="accent">.</span><span class="code-tag">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../ali_portfolio/index.html" class="btn btn-primary"
+                        style="padding: 0.4rem 1rem; font-size: 0.9rem; margin-left: 1rem;">Ali's Portfolio <i
+                            class="fa-solid fa-arrow-right"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <h3 class="greeting">Hello, World! I am</h3>
+            <h1 class="name">A Passionate <span class="accent">Developer</span></h1>
+            <h2 class="typing-container">
+                I build <span id="typing-text"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-desc">
+                I'm a 14-year-old tech enthusiast specializing in Python for the backend. I love solving complex
+                problems, building scalable APIs, and constantly learning new technologies.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About <span class="accent">Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <h3>My Journey</h3>
+                    <p>At just 14 years old, I've dived deep into the world of programming. While many focus on the
+                        visual aspects of the web, my true passion lies in the logic, data, and systems that power it
+                        all—the <strong>Backend</strong>.</p>
+                    <p>Python is my weapon of choice. Its clean syntax and powerful libraries let me turn ideas into
+                        functional, robust applications. When I'm not coding, I'm exploring new technologies, reading
+                        about system architecture, or challenging myself with algorithmic puzzles.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card box-glow">
+                        <i class="fa-brands fa-python stat-icon"></i>
+                        <h4>Python Core</h4>
+                        <p>Advanced concepts, data structures & algorithms.</p>
+                    </div>
+                    <div class="stat-card box-glow">
+                        <i class="fa-solid fa-server stat-icon"></i>
+                        <h4>Backend Dev</h4>
+                        <p>Building RESTful APIs and logic processing.</p>
+                    </div>
+                    <div class="stat-card box-glow">
+                        <i class="fa-solid fa-database stat-icon"></i>
+                        <h4>Databases</h4>
+                        <p>Managing and querying relational databases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-darker">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technical <span class="accent">Skills</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-grid fade-in">
+                <!-- Skill Category 1 -->
+                <div class="skill-category box-glow">
+                    <h3>Backend & Core</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span>Flask / FastAPI</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="75%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span>SQL / SQLite</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="80%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Skill Category 2 -->
+                <div class="skill-category box-glow">
+                    <h3>Frontend Basics</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="70%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="65%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured <span class="accent">Projects</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid fade-in">
+                <!-- Project 1 -->
+                <div class="project-card box-glow">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-regular fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">RESTful Task API</h3>
+                        <p class="project-desc">A robust task management API built with FastAPI and SQLite. Features
+                            include user authentication via JWT, CRUD operations for tasks, and automated tests.</p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>FastAPI</li>
+                            <li>SQLite</li>
+                            <li>JWT</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card box-glow">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-regular fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Python Discord Bot</h3>
+                        <p class="project-desc">A feature-rich Discord bot built using discord.py. It handles server
+                            moderation, fetching weather data via external APIs, and a custom currency system.</p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>discord.py</li>
+                            <li>APIs</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card box-glow">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-regular fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Data Scraper & Analyzer</h3>
+                        <p class="project-desc">A script that scrapes tech news articles, analyzes the frequency of
+                            specific keywords using Pandas, and outputs the statistics to a CSV report.</p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>BeautifulSoup</li>
+                            <li>Pandas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section bg-darker">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In <span class="accent">Touch</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content fade-in">
+                <p class="contact-text">I'm currently looking for new opportunities to learn and collaborate on exciting
+                    backend projects. Whether you have a question or just want to say hi, I'll try my best to get back
+                    to you!</p>
+                <div class="contact-info">
+                    <a href="mailto:hello@example.com" class="btn btn-primary">Say Hello</a>
+                    <div class="social-links">
+                        <a href="https://github.com/abasovf" target="_blank" title="GitHub" data-tooltip="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://discord.com/users/1443703864766496798" target="_blank" title="Discord"
+                            data-tooltip="Discord"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/1.abasovf/" target="_blank" title="Instagram"
+                            data-tooltip="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="code-tag">&lt;</span>Dev<span class="accent">.</span><span
+                        class="code-tag">/&gt;</span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/abasovf" target="_blank" title="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://discord.com/users/1443703864766496798" target="_blank" title="Discord"><i
+                            class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.instagram.com/1.abasovf/" target="_blank" title="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2026 Designed &amp; Built by <span class="accent">Me</span>. Powered by Python &amp; Vanilla
+                    Web.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
